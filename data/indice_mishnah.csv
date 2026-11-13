@@ -1,0 +1,64 @@
+Seder_PT,Seder_HE,Tratado_PT,Tratado_HE,Total_Capitulos,Arquivo
+Zeraim,זרעים,Berachot,ברכות,5,tratados/berachot.csv
+Zeraim,זרעים,Peah,פאה,6,tratados/peah.csv
+Zeraim,זרעים,Demai,דמאי,4,tratados/demai.csv
+Zeraim,זרעים,Kilayim,כלאיים,9,tratados/kilayim.csv
+Zeraim,זרעים,Sheviit,שביעית,8,tratados/sheviit.csv
+Zeraim,זרעים,Terumot,תרומות,10,tratados/terumot.csv
+Zeraim,זרעים,Maasrot,מעשרות,8,tratados/maasrot.csv
+Zeraim,זרעים,Maaser Sheni,מעשר שני,7,tratados/maaser_sheni.csv
+Zeraim,זרעים,Chalah,חלה,9,tratados/chalah.csv
+Zeraim,זרעים,Orlah,ערלה,9,tratados/orlah.csv
+Zeraim,זרעים,Bikurim,ביכורים,11,tratados/bikurim.csv
+Moed,מועד,Shabat,שבת,11,tratados/shabat.csv
+Moed,מועד,Eruvin,עירובין,10,tratados/eruvin.csv
+Moed,מועד,Pessachim,פסחים,7,tratados/pessachim.csv
+Moed,מועד,Shekalim,שקלים,7,tratados/shekalim.csv
+Moed,מועד,Yoma,יומא,8,tratados/yoma.csv
+Moed,מועד,Sucá,סוכה,11,tratados/suca.csv
+Moed,מועד,Beitzá,ביצה,10,tratados/beitza.csv
+Moed,מועד,Rosh Hashaná,ראש השנה,9,tratados/rosh_hashana.csv
+Moed,מועד,Taanit,תענית,7,tratados/taanit.csv
+Moed,מועד,Meguilá,מגילה,11,tratados/meguila.csv
+Moed,מועד,Moed Katan,מועד קטן,10,tratados/moed_katan.csv
+Moed,מועד,Chaguigá,חגיגה,8,tratados/chaguiga.csv
+Nashim,נשים,Yevamot,יבמות,4,tratados/yevamot.csv
+Nashim,נשים,Ketubot,כתובות,10,tratados/ketubot.csv
+Nashim,נשים,Nedarim,נדרים,4,tratados/nedarim.csv
+Nashim,נשים,Nazir,נזיר,7,tratados/nazir.csv
+Nashim,נשים,Sotá,סוטה,9,tratados/sota.csv
+Nashim,נשים,Guitin,גיטין,6,tratados/guitin.csv
+Nashim,נשים,Kidushin,קידושין,10,tratados/kidushin.csv
+Nezikin,נזיקין,Bava Kama,בבא קמא,4,tratados/bava_kama.csv
+Nezikin,נזיקין,Bava Metzia,בבא מציעא,8,tratados/bava_metzia.csv
+Nezikin,נזיקין,Bava Batra,בבא בתרא,6,tratados/bava_batra.csv
+Nezikin,נזיקין,Sanhedrin,סנהדרין,6,tratados/sanhedrin.csv
+Nezikin,נזיקין,Makot,מכות,10,tratados/makot.csv
+Nezikin,נזיקין,Shevuot,שבועות,7,tratados/shevuot.csv
+Nezikin,נזיקין,Eduyot,עדויות,14,tratados/eduyot.csv
+Nezikin,נזיקין,Avodá Zará,עבודה זרה,9,tratados/avoda_zara.csv
+Nezikin,נזיקין,Pirkei Avot,אבות,18,tratados/pirkei_avot.csv
+Nezikin,נזיקין,Horayot,הוריות,5,tratados/horayot.csv
+Kodashim,קדשים,Zevachim,זבחים,4,tratados/zevachim.csv
+Kodashim,קדשים,Menachot,מנחות,4,tratados/menachot.csv
+Kodashim,קדשים,Chulin,חולין,7,tratados/chulin.csv
+Kodashim,קדשים,Bechorot,בכורות,7,tratados/bechorot.csv
+Kodashim,קדשים,Arachin,ערכין,4,tratados/arachin.csv
+Kodashim,קדשים,Temurá,תמורה,6,tratados/temura.csv
+Kodashim,קדשים,Keritot,כריתות,7,tratados/keritot.csv
+Kodashim,קדשים,Meilá,מעילה,4,tratados/meila.csv
+Kodashim,קדשים,Tamid,תמיד,4,tratados/tamid.csv
+Kodashim,קדשים,Midot,מידות,9,tratados/midot.csv
+Kodashim,קדשים,Kinim,קינים,4,tratados/kinim.csv
+Tohorot,טהרות,Kelim,כלים,9,tratados/kelim.csv
+Tohorot,טהרות,Oholot,אהלות,8,tratados/oholot.csv
+Tohorot,טהרות,Negaim,נגעים,6,tratados/negaim.csv
+Tohorot,טהרות,Pará,פרה,4,tratados/para.csv
+Tohorot,טהרות,Tohorot,טהרות,0,tratados/tohorot.csv
+Tohorot,טהרות,Mikvaot,מקוואות,8,tratados/mikvaot.csv
+Tohorot,טהרות,Nidá,נידה,7,tratados/nida.csv
+Tohorot,טהרות,Machshirin,מכשירין,6,tratados/machshirin.csv
+Tohorot,טהרות,Zavim,זבים,6,tratados/zavim.csv
+Tohorot,טהרות,Tevul Yom,טבול יום,5,tratados/tevul_yom.csv
+Tohorot,טהרות,Yadayim,ידיים,5,tratados/yadayim.csv
+Tohorot,טהרות,Uktzin,עוקצין,6,tratados/uktzin.csv
