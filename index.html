@@ -374,18 +374,9 @@ function csvToT(s,filename=""){
  if(!book&&filename)book=filename.replace(/\.(csv|tsv|txt)$/i,"").replace(/[_-]+/g," ").replace(/\b\w/g,c=>c.toUpperCase()).trim();
  return book&&Object.keys(d).length?{m:book,d}:null;
 }
-async function collectDataFiles(path="data",seen=new Set()){
- const key=path.toLowerCase();if(seen.has(key))return [];seen.add(key);
- const url="https://api.github.com/repos/BM7770/Tanach-to-PDF/contents/"+path.split("/").map(encodeURIComponent).join("/")+"?ref=main";
- const response=await fetch(url,{headers:{Accept:"application/vnd.github+json"},cache:"no-store"});
- if(!response.ok)throw new Error("GitHub HTTP "+response.status+" while listing "+path);
- const items=await response.json();if(!Array.isArray(items))throw new Error("GitHub did not return a folder listing for "+path);
- const found=[];
- for(const item of items){
-  if(item.type==="dir")found.push(...await collectDataFiles(item.path,seen));
-  else if(item.type==="file"&&/\.(csv|tsv|txt)$/i.test(item.name))found.push({name:item.name,path:item.path||path+"/"+item.name,url:item.download_url});
- }
- return found;
+const DATA_FILES=["Bamidbar.csv", "Bereshit.csv", "Daniel.csv", "Devarim.csv", "Divrei_Hayamim.csv", "Eicha.csv", "Esther.csv", "Ezra.csv", "Iyov.csv", "Kohelet.csv", "Melachim.csv", "Mishlei.csv", "Rut.csv", "Shemot.csv", "Shir_HaShirim.csv", "Shmuel.csv", "Shoftim.csv", "Tehillim.csv", "Trei_Asar.csv", "Vayikra.csv", "Yechezkel.csv", "Yehoshua.csv", "Yeshayahu.csv", "Yirmiyahu.csv"];
+async function collectDataFiles(){
+ return DATA_FILES.map(name=>({name,path:"data/"+name,url:"data/"+encodeURIComponent(name)}));
 }
 async function loadBookFiles(){
  setTargetStatus("srcMsg","dataLoading");
@@ -451,18 +442,8 @@ function buildLexFromRows(rows){
  for(const ent of lex.entries)for(const alias of ent.aliases){const k=norm(alias);if(!k)continue;const n=k.split(" ").length;if(n>1){if(!lex.phr.has(k))lex.phr.set(k,ent);lex.maxN=Math.max(lex.maxN,n)}else if(!lex.single.has(k))lex.single.set(k,ent)}
  return lex;
 }
-async function collectBatchFiles(path="batch",seen=new Set()){
- const key=path.toLowerCase();if(seen.has(key))return [];seen.add(key);
- const url="https://api.github.com/repos/BM7770/Tanach-to-PDF/contents/"+path.split("/").map(encodeURIComponent).join("/")+"?ref=main";
- const response=await fetch(url,{headers:{Accept:"application/vnd.github+json"},cache:"no-store"});
- if(!response.ok)throw new Error("GitHub HTTP "+response.status+" while listing "+path);
- const items=await response.json();if(!Array.isArray(items))throw new Error("GitHub did not return a folder listing for "+path);
- const found=[];
- for(const item of items){
-  if(item.type==="dir")found.push(...await collectBatchFiles(item.path,seen));
-  else if(item.type==="file"&&/\.(csv|txt|tsv|psv)$/i.test(item.name))found.push({name:item.name,path:item.path||path+"/"+item.name,url:item.download_url});
- }
- return found;
+async function collectBatchFiles(){
+ return [{name:"batch",path:"batch",url:"batch"}];
 }
 async function loadBatchFileRows(files){
  const results=new Array(files.length);let next=0;
